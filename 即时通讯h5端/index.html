@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>IM</title>
+		<!--<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css"/>消除浏览器之间细微的差异-->
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/ux_1462265947_5562909/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/ux_1462265947_5562909/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/iScroll.css" />
+		<link rel="stylesheet" type="text/css" href="css/sprite.css" />
+		<!--[if lt IE 9]>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  	<script src="js/respond.min.js" type="text/javascript" charset="utf-8"></script>
+ 	<![endif]-->
+		<style type="text/css">
+			@media all and (orientation:landscape) and (max-width:700px) {
+				body {
+					-ms-flex-align: baseline;
+					-webkit-align-items: baseline;
+					-webkit-box-align: baseline;
+					align-items: baseline;
+				}
+			}
+		</style>
+		<script type="text/javascript">
+			// Copyright 2014-2015 Twitter, Inc.
+			// Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+			if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+				var msViewportStyle = document.createElement('style')
+				msViewportStyle.appendChild(
+					document.createTextNode(
+						'@-ms-viewport{width:auto!important}'
+					)
+				)
+				document.querySelector('head').appendChild(msViewportStyle)
+			}
+		</script>
+		<script>
+			var nua = navigator.userAgent;
+			var is_android = ((nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1) && !(nua.indexOf('Chrome') > -1));
+			if (is_android) {
+				$('select.form-control').removeClass('form-control').css('width', '100%');
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 llist">
+				<img src="img/切图/登陆/logo_26.png" data-toggle="modal" data-target="#personInfor" />
+				<p>IM体验demo</p>
+				<ul class="nav">
+					<li class="active">
+						<span class="img communicate "></span>沟通
+						<span class="notice">8</span>
+					</li>
+					<li>
+						<span class="img contacts"></span>联系人
+					</li>
+					<li>
+						<span class="img group"></span>群组
+					</li>
+				</ul>
+				<div class="bottomBut">
+					<ul class="navBot">
+						<li>
+							<span class="img search2 active"></span>搜索
+						</li>
+						<li>
+							<span class="img creat_group"></span>创建群
+						</li>
+						<li>
+							<span class="img create_a_discussion_group"></span>创建讨论组
+						</li>
+						<li>
+							<span class="img set"></span>设置
+						</li>
+					</ul>
+					<span class="img add"></span>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-2  col-sm-3 col-xs-3 clist">
+				<div class="searchDiv">
+					<input type="text" id="search" value="" placeholder="搜索" />
+				</div>
+				<ul class="discuss">
+					<li class="active"><img src="img/切图/头像/头像群组/groups_head_portrait_02.png" />
+						<div>
+							<span>系统消息</span>
+							<span class="time">12:40</span>
+							<p>有人在讨论你</p>
+						</div>
+					</li>
+					<li><img src="img/切图/头像/头像群组/groups_head_portrait_02.png" />
+						<div>
+							<span>系统消息</span>
+							<span class="time">12:40</span>
+							<p>有人在讨论你</p>
+						</div>
+					</li>
+					<li><img src="img/切图/头像/头像群组/groups_head_portrait_02.png" />
+						<div>
+							<span>系统消息</span>
+							<span class="time">12:40</span>
+							<p>有人在讨论你</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="discuss">
+					<li class="active"><img src="img/切图/头像/头像讨论组/discussio_groups_01.png" />
+						<div>
+							<span>系统消息</span><span class="noticeQ">908</span>
+							<span class="time">12:40</span>
+							<p>有人在讨论你</p>
+						</div>
+					</li>
+					<li><img src="img/切图/头像/头像讨论组/discussio_groups_01.png" />
+						<div>
+							<span>系统消息</span>
+							<span class="time">12:40</span>
+							<p>有人在讨论你</p>
+						</div>
+					</li>
+					<li><img src="img/切图/头像/头像讨论组/discussio_groups_02.png" />
+						<div>
+							<span>系统消息</span>
+							<p>有人在讨论你</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="discuss" data-toggle="modal" data-target="#group">
+					<li class="contactPerson"><span class="contact contactP"></span><span class="addAct">添加联系人</span></li>
+					<li>
+						<div class="zimu">
+							<span>A</span><span></span>
+						</div>
+					</li>
+					<li class="active"><img src="img/切图/头像/头像讨论组/discussio_groups_01.png" />
+						<div>
+							<span>系统消息</span>
+							<p>有人在讨论你</p>
+						</div>
+					</li>
+					<li><img src="img/切图/头像/头像讨论组/discussio_groups_01.png" />
+						<div>
+							<span>系统消息</span>
+							<p>有人在讨论你</p>
+						</div>
+					</li>
+					<li><img src="img/切图/头像/头像讨论组/discussio_groups_02.png" />
+						<div>
+							<span>系统消息</span>
+							<p>有人在讨论你</p>
+						</div>
+					</li>
+					<li>
+						<div class="zimu">
+							<span>B</span><span></span>
+						</div>
+					</li>
+					<li class="active"><img src="img/切图/头像/头像讨论组/discussio_groups_01.png" />
+						<div>
+							<span>系统消息</span>
+							<p>有人在讨论你</p>
+						</div>
+					</li>
+					<li><img src="img/切图/头像/头像讨论组/discussio_groups_01.png" />
+						<div>
+							<span>系统消息</span>
+							<p>有人在讨论你</p>
+						</div>
+					</li>
+					<li><img src="img/切图/头像/头像讨论组/discussio_groups_02.png" />
+						<div>
+							<span>系统消息</span>
+							<p>有人在讨论你</p>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 rlist" style="display: none;">
+				<div class="receiver">
+					<img src="img/切图/头像/头像群组/groups_head_portrait_02.png" /><span class="name">小帅帅</span>
+					<span class="img video right"></span><span class="img audio right"></span>
+				</div>
+				<div class="chats iScroll">
+					<div onclick="IM.EV_resendMsg(this)" class="oneText">
+						<p>小帅帅</p>
+						<img src="img/切图/头像/头像群组/groups_head_portrait_02.png" class="left" />
+						<div id="" class="dialog">
+							<span class="sjx"></span>
+							<span class="contentText"><img src="img/20.gif"/></span>
+						</div>
+					</div>
+					<div onclick="IM.EV_resendMsg(this)" class="oneText">
+						<p>小帅帅</p>
+						<img src="img/切图/头像/头像群组/groups_head_portrait_02.png" class="left" />
+						<div id="" class="dialog">
+							<span class="sjx"></span>
+							<span class="contentText">输给那啥啥也没用什么,一长比赛而已嘛输给那啥啥也没用什么,一长比赛而已嘛输给那啥啥也没用什么,一长比赛而已嘛输给那啥啥也没用什么,一长比赛而已嘛输给那啥啥也没用什么,一长比赛而已嘛</span>
+						</div>
+					</div>
+					<!--语音-->
+					<div onclick="IM.EV_resendMsg(this)" class="oneTextR">
+						<p>小帅帅</p>
+						<div id="" class="dialog">
+							<span class="contentText">语音消息请在其他终端接收</span>
+							<span class="sjx"></span>
+						</div>
+						<img src="img/切图/头像/头像群组/groups_head_portrait_02.png" class="left" />
+					</div>
+					<div class="historyTime">2016.05.29</div>
+					<div onclick="IM.EV_resendMsg(this)" class="oneText">
+						<p>小帅帅</p>
+						<img src="img/切图/头像/头像群组/groups_head_portrait_02.png" class="left" />
+						<div id="" class="dialog">
+							<span class="sjx"></span>
+							<span class="contentText">输给那啥啥也没用什么,一长比赛而已嘛</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="inputText">
+					<span class="img expression"></span>
+					<span class="img picture"></span>
+					<span class="img bur_-after_reading"></span>
+					<div class="inputSend">
+						<pre id="im_send_content" class="col-lg-10 col-md-9 col-sm-8 col-xs-7" contenteditable="true" onfocus="IM.Do_notice(1,'t')" onblur="IM.Do_notice(0,'f')"></pre>
+						<div class="col-lg-2 col-md-3 col-sm-3 col-xs-3 right">
+							<button class="audioB"><span class="img text"></span>语言</button>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-3 col-xs-3 right">
+							<button class="sendB">发送</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 rlist">
+				<div class="receiver">
+				</div>
+				<div class="videoPhone">
+					<img src="img/矩形-5-副本-2-拷贝-2.png" alt="" />
+					<p class="name">韩春云</p>
+					<p>年轻的人你可以想拼就拼</p>
+					<span>男</span>
+					<span>26</span>
+					<div>
+						<button class="talkBtn"><span class="contact talk "></span>与他沟通(IM)</button>
+						<div><button class="conversationBtn"><span class="contact conversation "></span>音频通话</button><button class="videoBtn"><span class="contact video "></span>视频通话</button></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<div class="audioAline">
+					<div class="imgDiv">
+						<img src="img/矢量智能对象-拷贝-2.png" />
+					</div>
+					<div class="audioDiv">
+						<p class="name">浩博</p>
+						<span class="audio audio_icon"></span><span class="color6060">对方邀请你音频通话</span>
+						<div class="audioBtn">
+							<button>接受</button><button>拒接</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<div class="audioAline">
+					<div class="imgDiv">
+						<img src="img/liu.jpg" />
+					</div>
+					<div class="audioDiv">
+						<p class="name">浩博</p>
+						<span class="audio audio_icon"></span><span class="color6060">对方邀请你音频通话……</span>
+						<div class="audioBtn">
+							<span class="audio mute"></span><span class="audio volume"></span><button>结束</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<div class="audioAline">
+					<div class="imgDiv">
+						<img src="img/liu.jpg" />
+					</div>
+					<div class="audioDiv">
+						<p class="name">浩博</p>
+						<span class="audio audio_icon"></span><span class="color6161">00:20:25</span>
+						<div class="audioBtn">
+							<span class="audio mute"></span><span class="audio volume"></span><button>结束</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<div class="audioAline">
+					<div class="imgDiv">
+						<img src="img/矢量智能对象-拷贝-4.png" />
+					</div>
+					<div class="audioDiv">
+						<p class="name">浩博</p>
+						<span class="audio audio_icon"></span><span class="color6161">00:20:25</span>
+						<div class="audioBtn">
+							<button>接受</button><button>拒接</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="modal fade in" id="group" role="dialog" aria-labelledby="gridSystemModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						<h4 class="modal-title" id="gridSystemModalLabel">我们爱运动<img src="img/chang.png"</h4>
+					</div>
+					<div class="modal-body">
+						<p class="setting">群设置</p>
+						<div class="groupSet">
+							<input type="radio" id="noone" checked="checked" name="flag" value="noone">
+							<label name="noone" class="checked" for="noone">允许成员添加其他人</label>
+							<input type="radio" id="new" name="flag" value="new">
+							<label name="new" for="new">新消息聊天</label>
+							<input type="radio" id="top" name="flag" value="top">
+							<label name="top" for="top">置顶消息</label>
+						</div>
+						<p class="green cleanhistory">清空聊天记录</p>
+						<p>群公告</p>
+						<div class="setting">时间是周一到周四，洗发露，沐浴乳，拖鞋。。。。注意，不会游泳的不要去深水区，安全第一</div>
+						<div class="groupname">
+							<p>群成员<span class="green">（166）<span class="greenlg">+</span><small>添加新成员</small></p>
+							<ul>
+								<li><img src="img/1.png" /><br><span>我</span></li>
+								<li><img src="img/1.png" /><br><span>北大dfdf玩</span></li>
+								<li><img src="img/1.png" /><br><span>北大玩</span></li>
+								<li><img src="img/1.png" /><br><span>北大房贷首付玩</span></li>
+								<li><img src="img/1.png" /><br><span>北大发玩</span></li>
+								<li><img src="img/1.png" /><br><span>北玩</span></li>
+								<li><img src="img/1.png" /><br><span>北大发玩</span></li>
+								<li><img src="img/1.png" /><br><span>北大大幅度玩</span></li>
+								<li><img src="img/1.png" /><br><span>北大玩</span></li>
+							</ul>
+						</div>
+						<button type="button" class="btn dismiss">解散群组</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="login" role="dialog" aria-labelledby="gridSystemModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						<h4 class="modal-title" id="gridSystemModalLabel"><img src="img/切图/登陆/logo_26.png" width="20px"/>IM体验Demo</h4>
+						<img src="img/切图/登陆/logo_26.png" class="loginImg" />
+					</div>
+					<div class="modal-body">
+						<div class="login1">
+								<input type="text" class="input-sm duiqi" placeholder="VoIp号码">
+								<input type="password" class="input-sm duiqi" placeholder="VoIp密码">
+							<div class="loginSet">
+								<input type="checkbox" id="remember" value="remember" />
+								<label name="noone" class="checked" for="remember">记住密码</label>
+								<input type="checkbox" id="auto" value="auto" />
+								<label name="noone" class="checked" for="auto">自动登录</label>
+								<div class="error">
+									对不起，您输入的密码不正确
+								</div>
+							</div>
+							<button type="button" class="btn login">登陆</button>
+						</div>
+						<div class="login2">
+							<div class="form-group">
+								<input type="text" class="input-sm duiqi" placeholder="输入手机号">
+							</div>
+							<button type="button" class="btn login">登陆</button>
+						</div>
+						
+						<div class="loginfooter">
+							<span>切换登陆模式</span>|<span>About</span>
+						</div>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<div class="modal fade" id="personInfor" role="dialog" aria-labelledby="gridSystemModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+						<h4 class="modal-title" id="gridSystemModalLabel">完善个人信息</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal">
+							<div class="form-group ">
+								<label for="sName" class=" control-label">昵称：</label>
+								<input type="email" class="input-sm duiqi" id="sName" placeholder="">
+							</div>
+							<div class="form-group">
+								<label for="sLink" class="control-label">性别：</label>
+								<input type="" class="input-sm duiqi" id="sLink" placeholder="">
+							</div>
+							<div class="form-group">
+								<label for="sOrd" class="control-label">生日：</label>
+								<input type="date" class=" input-sm duiqi" id="sOrd" placeholder="请选择时间">
+							</div>
+							<div class="form-group">
+								<label for="sKnot" class="control-label">说明：</label>
+								<textarea class=" input-sm duiqi" id="sKnot" placeholder=""></textarea>
+							</div>
+							<button type="button" class="btn save">保 存</button>
+						</form>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.groupSet label').click(function() {
+					var radioId = $(this).attr('name');
+					$('.groupSet label').removeAttr('class') && $(this).attr('class', 'checked');
+					$('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+				});
+			});
+			$("#login").modal("toggle");
+		</script>
+	</body>
+
+</html>
